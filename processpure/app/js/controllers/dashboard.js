@@ -249,3 +249,21 @@ app.controller('JVectorMapDemoCtrl', ['$scope', function($scope) {
     ];
   }])
 ;
+app.controller('DashboardCarouselCtrl', ['$scope', function($scope) {
+  $scope.myInterval = 5000;
+  var slides = $scope.slides = [];
+  $scope.addSlide = function() {
+    slides.push({
+      image: 'img/c' + [slides.length % 4] + '.png',
+      text: ['Carousels require the use of an id in the slide data caption',
+              'Contrast and Similarity in Graphic Design are necessary to go',
+              'Bacon ipsum dolor sit amet nulla dolor sit amet nulla',
+              'Responsive treatment of angular apps'][slides.length % 4]
+    });
+  };
+  for (var i=0; i<4; i++) {
+    $scope.addSlide();
+  }
+  console.log(1, $scope.slides);
+}])
+;
