@@ -29,7 +29,7 @@
       isFirstDisabled: false
     };
   }])
-  ; 
+  ;
   app.controller('AlertDemoCtrl', ['$scope', function($scope) {
     $scope.alerts = [
       { type: 'success', msg: 'Well done! You successfully read this important alert message.' },
@@ -49,7 +49,7 @@
       $scope.alerts.splice(index, 1);
     };
   }])
-  ; 
+  ;
   app.controller('ButtonsDemoCtrl', ['$scope', function($scope) {
     $scope.singleModel = 1;
 
@@ -61,7 +61,7 @@
       right: false
     };
   }])
-  ; 
+  ;
   app.controller('CarouselDemoCtrl', ['$scope', function($scope) {
     $scope.myInterval = 5000;
     var slides = $scope.slides = [];
@@ -78,7 +78,7 @@
       $scope.addSlide();
     }
   }])
-  ; 
+  ;
   app.controller('DropdownDemoCtrl', ['$scope', function($scope) {
     $scope.items = [
       'The first choice!',
@@ -100,7 +100,7 @@
       $scope.status.isopen = !$scope.status.isopen;
     };
   }])
-  ; 
+  ;
   app.controller('ModalInstanceCtrl', ['$scope', '$uibModalInstance', 'items', function($scope, $modalInstance, items) {
     $scope.items = items;
     $scope.selected = {
@@ -115,7 +115,7 @@
       $modalInstance.dismiss('cancel');
     };
   }])
-  ; 
+  ;
   app.controller('ModalDemoCtrl', ['$scope', '$uibModal', '$log', function($scope, $modal, $log) {
     $scope.items = ['item1', 'item2', 'item3'];
     $scope.open = function (size,windowClass) {
@@ -179,7 +179,7 @@
 
 
   }])
-  ; 
+  ;
   app.controller('PaginationDemoCtrl', ['$scope', '$log', function($scope, $log) {
     $scope.totalItems = 64;
     $scope.currentPage = 4;
@@ -196,12 +196,12 @@
     $scope.bigTotalItems = 175;
     $scope.bigCurrentPage = 1;
   }])
-  ; 
+  ;
   app.controller('PopoverDemoCtrl', ['$scope', function($scope) {
     $scope.dynamicPopover = 'Hello, World!';
     $scope.dynamicPopoverTitle = 'Title';
   }])
-  ; 
+  ;
   app.controller('ProgressDemoCtrl', ['$scope', function($scope) {
     $scope.max = 200;
 
@@ -240,7 +240,7 @@
     };
     $scope.randomStacked();
   }])
-  ; 
+  ;
   app.controller('TabsDemoCtrl', ['$scope', function($scope) {
     $scope.tabs = [
       { title:'Profile', icon:'user', content:'You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap&apos;s first-class API and should be your first consideration when using in a plugin.' },
@@ -248,7 +248,7 @@
       { title:'Settings', icon:'cog', content:'We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.' },
     ];
   }])
-  ; 
+  ;
   app.controller('RatingDemoCtrl', ['$scope', function($scope) {
     $scope.rate = 7;
     $scope.max = 10;
@@ -268,13 +268,13 @@
   ];
 
   }])
-  ; 
+  ;
   app.controller('TooltipDemoCtrl', ['$scope', function($scope) {
     $scope.dynamicTooltip = 'Hello, World!';
     $scope.dynamicTooltipText = 'dynamic';
     $scope.htmlTooltip = 'I\'ve been made <b>bold</b>!';
   }])
-  ; 
+  ;
   app.controller('TypeaheadCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.selected = undefined;
     $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
@@ -294,7 +294,7 @@
       });
     };
   }])
-  ; 
+  ;
 
 app.controller('DatepickerDemoCtrl', ['$scope', function($scope) {
   $scope.today = function() {

@@ -49,9 +49,9 @@ angular.module('app')
                             deps: ['$ocLazyLoad',
                                 function($ocLazyLoad) {
                                     return $ocLazyLoad.load(['countTo',
-                                        'js/controllers/countto.js', 
-                                        'js/controllers/vectormap.js', 
-                                        'js/directives/ui-todowidget.js', 
+                                        'js/controllers/countto.js',
+                                        'js/controllers/vectormap.js',
+                                        'js/directives/ui-todowidget.js',
                                         'js/controllers/messages-widget.js',
                                         '../bower_components/font-awesome/css/font-awesome.css'
                                     ]);
@@ -213,7 +213,7 @@ angular.module('app')
                                     return uiLoad.load(['../bower_components/font-awesome/css/font-awesome.css']);
                                 }
                             ]
-                        }                        
+                        }
                     })
                     .state('app.ui.carousel', {
                         url: '/carousel',
