@@ -1,16 +1,8 @@
 <!-- START TOPBAR -->
-<div class='logo-area'>
-</div>
+<a href="/"><div class='logo-area'>
+</div></a>
 <div class='quick-area'>
-    <div class='pull-left slantit'>
-        <ul class="info-menu left-links list-inline list-unstyled">
-            <li class="sidebar-toggle-wrap">
-                <a href data-toggle="sidebar" class="sidebar_toggle" ng-click="app.settings.menuFolded = !app.settings.menuFolded; menuChatToggle('menu',app.settings.menuFolded) ">
-                    <i class="material-icons">menu</i>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <div class='pull-left slantit'></div>
     <div class="pull-left pagetitle">
         <span class='line'></span>
         <h1>{{app.settings.pagetitle}}</h1>
@@ -67,11 +59,6 @@
                     <img src="data/profile/profile.png" alt="user-image" class="img-circle img-inline">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right profile animated fadeIn">
-                    <li>
-                        <a ui-sref="app.dashboard">
-                            <i class="material-icons">settings</i> Settings
-                        </a>
-                    </li>
                     <li>
                         <a ui-sref="app.ui.profile">
                             <i class="material-icons">person</i> Profile

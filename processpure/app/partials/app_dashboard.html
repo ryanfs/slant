@@ -1,52 +1,36 @@
-<div class='content-wrapper' ng-init="app.settings.pagetitle = 'Dashboard'; ">
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'My Accounts'; ">
     <section class="box nobox margin-top-15 margin-bottom-0" ng-controller="DashboardHeadCtrl">
         <div class="content-body">
             <div class="col-md-12 col-sm-12 col-xs-12 padding-right-30 padding-left-20">
-                <div class="col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
-                    <div class="r4_counter wid-stats db_box">
-                        <div class='stats-data'>
-                            <i class="material-icons icon-primary pull-left">av_timer</i>
-                            <div class="stats">
-                                <h3>{{ daysLeftInQuarter }}</h3>
-                                <span>Days left in the quarter</span>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tile-progress inverted text-primary">
+                        <div class="content">
+                            <h4><i class='fa fa-dashboard icon-sm'></i>24 days left in Q3</h4>
+                            <uib-progressbar value="60" class="progress"></uib-progressbar>
+                            <span>(36 calendar days)</span>
                         </div>
                     </div>
                 </div>
-          <!--       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
-                    <div class="r4_counter wid-stats db_box">
-                        <div class='stats-data'>
-                            <i class="material-icons icon-primary pull-left">public</i>
-                            <div class="stats">
-                                <h3>99.9%</h3>
-                                <span>Server&nbsp;Up</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
-                    <div class="r4_counter wid-stats db_box">
-                        <div class='stats-data'>
-                            <i class="material-icons icon-primary pull-left">people</i>
-                            <div class="stats">
-                                <h3>3550</h3>
-                                <span>Visitors</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
-                    <div class="r4_counter wid-stats db_box">
-                        <div class='stats-data'>
 
-                            <i class="material-icons icon-primary pull-left">store_mall_directory</i>
-                            <div class="stats">
-                                <h3>1240</h3>
-                                <span>New&nbsp;Orders</span>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tile-progress inverted text-success">
+                        <div class="content">
+                            <h4><i class='fa fa-dashboard icon-sm'></i> $725k</h4>
+                            <uib-progressbar value="60" class="progress"></uib-progressbar>
+                            <span>Total commit for Q3</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tile-progress inverted text-accent">
+                        <div class="content">
+                            <h4><i class='fa fa-dashboard icon-sm'></i> $220k</h4>
+                            <uib-progressbar value="20" class="progress"></uib-progressbar>
+                            <span>Process Pure account value</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
